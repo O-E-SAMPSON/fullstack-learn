@@ -1,80 +1,130 @@
 //LEARNING FULL STACK WITH SMARTHUB TECH
 // Data Types in JavaScript
-// Primitive Data Types
-//1> String: Stringin javaScript are just text in a quotes
-// Examples
-//a. " " double quote eg "name"
-//b. '  ' single quote eg '9'
-//c. `  `  backslice eg `true`
 
-//2> Numbers
-//a. Int numbers
-//b. float (decimal) numbers.   Is float the same with decimal?
+/* Primitive Data Types
+primitive values are immutable: meaning they cannot be
+altered after creation, and are not object.
+1. String
+2. Numbers
+3. Booleans
+4. null
+5. undefine
+6. Symbol
+7. bigint
+*/
+/*
+1> String:
+String in javaScript are just text in a quotes.
+ Examples
+a. " " double quote eg "name"
+b. '  ' single quote eg '99'
+c. `  `  backslice eg `true`
+*/
+
+/*
+2> Numbers
+a. Int numbers
+b. float (decimal) numbers.Is float the same with decimal?
+c. Infinity
+d. -Infinity
+e. NaN (Not-a-Number)
+*/
 
 //3> Booleans: which are true or false.
 
 //4> null: means empty, intentionally empty
 
-//5> undefine: This means the either a value is not present or the data type is not availabe
+/*
+5> undefine: This means the either a value is not
+ present or the data type is not availabe
+or
+Denotes a variable that has been declared but not
+assigned a value.
+*/
+
+/*
+6> symbol: are unique and immutable primitive values, often
+used as object property keys to avoid naming conflicts.
+*/
+
+/*
+bigint: its represents integers with arbitrary precision,
+beyond the safe limit of the standard number type.
+*/
 
 
-// non Primitive data types
-// 1. objects
-// 2. arrays
-// 3. date
+/* non Primitive data types:
+(also known as reference types or object)
+are used to store collections of data or more
+complex entities.
+1. objects
+2. arrays
+3. date
+4. function
+*/
 
-// Variables
-// we can declare variable using let or const
-// 1. let saves our data temporaraly and can be changed or redeclared
-
-/*let lastName = "sam";
+/* Variables
+we can declare variable using let or const
+1. let saves our data temporaraly and can be changed
+or redeclared
+*/
+// two way to declare strings.
+/*
+let lastName = "sam";
 lastName = "semeon";
 console.log(lastName);
 */
 
-/*let age = 55;
+// two ways to declare numbers
+/*
+//let age = 55;
 age = 5;
 console.log(age);
 */
 
 
-/*let isfemale = false;
-isfemale = true;
+// two ways to declare boolean
+/*
+let isfemale = false;
+//isfemale = true;
 console.log(isfemale);
 */
 
 
-// 2. const stores our data permenantly and can not be changed or redeclared
 
-/*const lastName = "sam";
+// 2. const stores our data permenantly and can
+// not be changed or redeclared
+/*
+const lastName = "sam";
 
 console.log(lastName);
 
 const age = 55;
 
-Console.log(age);
+console.log(age);
 
 const isfemale = false;
 
 console.log(isfemale);
 */
 
+
 // String Methods
 /*
 let firstName = "david";
 console.log(firstName.toUpperCase());
-console.log(firstName.toLowercase());
+console.log(firstName.toLowerCase());
 
 // How to get Lenght of A Variable
 console.log(firstName.length);
 */
 
-//naming convention in JavaScript
-//1>  pascal case: FirstName
-//2> canel case: firstName
-//3> snake case: first_name
-//4> upper case: FIRSTNAME
-//5> lower case: firstname
+/*naming convention in JavaScript
+1>  pascal case: FirstName
+2> canel case: firstName
+3> snake case: first_name
+4> upper case: FIRSTNAME
+5> lower case: firstname*/
 
 /*
 const firstName = "edision";
@@ -86,8 +136,8 @@ const fullName = ` Hello I am ${firstName}, ${lastName}`;
 console.log(fullName);
 
 //Method Using +
-const fullName = "Hello I am "+ firstName + " " + lastName;
-console.log(fullName);
+const fullNam = "Hello I am " + firstName + " " + lastName;
+console.log(fullNam);
 */
 
 // Numbers
@@ -97,11 +147,11 @@ console.log(fullName);
 const number = 2;
 const decimal = 2.267747;
 console.log(typeof (decimal));
-console.log(typeof(parseFloat(decimal)));
-console.log(typeof(number));
-console.log(typeof(parseInt(number)));
-console.log(typeof(decimal.toFixed(1)));
-console.log(typeof(toString(number)));
+console.log(typeof (parseFloat(decimal)));
+console.log(typeof (number));
+console.log(typeof (parseInt(number)));
+console.log(typeof (decimal.toFixed(1)));
+console.log(typeof (toString(number)));
 */
 
 //Methods of Number
@@ -112,8 +162,8 @@ console.log(typeof(toString(number)));
 
 //Work: Calculate area of a Circle
 //area = length * width
-
-/*const lenght = 20;
+/*
+const lenght = 20;
 const width = 10;
 const area = length * width
 console.log(`The Area of a circle is ${area}`);
@@ -140,13 +190,13 @@ console.log(`The Area of a circle is ${area}`);
 let Age = "15";
 const age = parseInt(Age);
 if (age === 18) {
-console.log(`You are ${age} years and you are an adult`);
+    console.log(`You are ${age} years and you are an adult`);
 } else if (age >= 18) {
-console.log(`Your ${age} years, you are not an adult`);
+    console.log(`Your ${age} years, you are not an adult`);
 } else {
-console.log(`You do not have any age`);
-} */
-
+    console.log(`You do not have any age`);
+}
+*/
 // Use this to correct my Assignment
 /*
 let score = "69.8";
@@ -164,8 +214,8 @@ console.log(scores);
 // Write a program that indicates days of the week. Monday to Sunday.
 //let days = "holiday";
 // QUESTION TO ASK: WHY THE AGE ON THE SWITCH CODE?
-
-/*switch (days) {
+/*
+switch (days) {
     case "Monday": console.log("This is Monday")
         break;
     case "Tuesday": console.log("This is Tuesday")
@@ -182,8 +232,8 @@ console.log(scores);
         break;
     default: console.log("Non of the day is found")
         break;
-} */
-
+}
+*/
 // Loops In Javascript
 // 1> for loop
 // 2> while loop
@@ -197,7 +247,7 @@ console.log(scores);
 
 // write a program that counts 1 - 10
 /*
-for (let count = 1; count <10; count++){
+for (let count = 1; count < 11; count++) {
     console.log(count)
 }
 */
@@ -230,7 +280,7 @@ while(count <= 10){
 
 /*
 const fruits = ["mango", "orange", "apple", "grape"];
-console.log(fruits.length);
+console.log(fruits.length); // How to get length of Array
 console.log(fruits[2]);
 */
 
@@ -249,7 +299,7 @@ console.log(names[4]);
 */
 
 /*
-const mixArray = ["strings", 1, true, ['text', 2], {name: 'bob'}];
+const mixArray = ["strings", 1, true, ['text', 2], { name: 'bob' }];
 console.log(mixArray[0]);
 console.log(mixArray[3][1]);
 console.log(mixArray[4].name);
@@ -276,7 +326,7 @@ fruit.unshift("berry");
 console.log(fruit);
 console.log(fruit.length);
 
-// Index of
+// Index of: To get the position of an item in array
 console.log(fruit.indexOf("berry"));
 
 // Join()
@@ -326,14 +376,14 @@ collection of properties written as key: value pairs.
 */
 
 /*
-NOTE: THERE IS OBJECT IN THIS ARRAY
-const mixArray = ["strings", 1, true, ['text', 2], {name: 'bob'}];
+//NOTE: THERE IS OBJECT IN THIS ARRAY
+const mixArray = ["strings", 1, true, ['text', 2], { name: 'bob' }];
 console.log(mixArray[0]);
 console.log(mixArray[3][1]);
 console.log(mixArray[4].name);
 */
 /*
-NOTE: THERE IS ARRAY IN THIS OBJECT
+//NOTE: THERE IS ARRAY IN THIS OBJECT
 const students = {
     name: "Edison",
     age: 9,
@@ -368,7 +418,6 @@ console.log(students);
 delete students.age;
 console.log(students);
 */
-
 // Creating multiple object in an array
 /*
 StudentArray = [
@@ -455,16 +504,16 @@ console.log(detals);
 */
 
 
-/*
-for in, for of in Video
-for (variable in Object){//for in will loop through property names
+
+//for in, for of in Video
+for (variable in Object) {//for in will loop through property names
     statement
 }
 
-for (variable of object){//for of will loop through proprty values
+for (variable of object) {//for of will loop through proprty values
     statement
 }
-*/
+
 /*
 let person = { fname: "kate", lname: "carnes", arms: 2 };
 let arr = [3, 5, 7];
@@ -1396,7 +1445,7 @@ old student." If the person is not a student, display
 "Hello [name], you are a [age] year old not a student."
 Use object destructuring to extract the properties from
 each object in the array. Use template literals to format
-the output string. 
+the output string.
 */
 /*
 const users = [
@@ -1556,7 +1605,7 @@ setTimeout(() => {
 
 
 /*        DOM
-.....Meaning..... 
+.....Meaning.....
 Document Object Module
 */
 /*
@@ -1621,4 +1670,296 @@ console.log(textcon);
 const upper = document.querySelector(".class");
 const up = upper.innerHTML.toUpperCase();
 console.log(up);
+*/
+/*
+Class
+classList
+add("Hi")
+remove("HI")
+toggle("")
+*/
+// How to get your class
+/*
+const kk = document.querySelector("h3");
+console.log(kk.classList);
+*/
+
+// How to add class
+/*
+const kk = document.querySelector("h3");
+console.log(kk.classList.add("class"));
+*/
+
+// How to remove class
+/*
+const kk = document.querySelector("h3");
+console.log(kk.classList.remove("class"));
+*/
+
+// How to toggle
+/*
+const kk = document.querySelector("h3");
+console.log(kk.classList.toggle("class"));
+*/
+// Redirecting a site
+/*
+const a = document.querySelector("a");
+console.log(a.href = "www.jw.org")
+*/
+
+// Working on geting input values
+/*
+const input = document.querySelector("input");
+console.log(input.value);
+console.log(input.type = "radio");
+*/
+
+/*
+    Siblings
+    .. parent
+    .. child
+*/
+/*
+const ul = document.querySelector("ul");
+console.log(ul.parentElement);
+
+const li = document.querySelector("ul");
+console.log(li.children[1].innerHTML = "Beans");
+*/
+
+
+
+/*
+// Class Work
+// classList
+// add
+const kk = document.querySelector("h3");
+//console.log(kk.classList);
+console.log(kk.classList.add("class"));
+
+
+const im = document.querySelector("img");
+console.log(im.src = "https://www.shutterstock.com/shutterstock/photos/2227931285/display_1500/stock-photo-macro-closeup-of-the-official-shirt-of-the-football-club-manchester-city-of-england-rio-de-2227931285.jpg")
+*/
+
+
+/*
+CreateElement:
+it create new element inside the javascript
+*/
+/*
+const di = document.createElement("div");
+di.textContent = "Hllo World";
+console.log(di);
+
+const p = document.createElement("p");
+p.textContent = "favour";
+console.log(p);
+*/
+/*
+const a = document.createElement("a");
+const app = a.href = "www.facebook.com";
+console.log(a);
+*/
+
+
+/*
+Append()
+it adds element to the body.
+*/
+/*
+const body = document.querySelector("body");
+const p = document.createElement("p");
+p.textContent = "favour";
+const a = document.createElement("a");
+const app = a.href = "www.facebook.com";
+body.append(p);
+body.append(app);
+*/
+
+/*
+appendChild()
+*/
+/*
+const ul = document.querySelector("ul");
+const li = document.createElement("li");
+li.textContent = "Rice";
+ul.appendChild(li);
+*/
+
+/*
+NOTE: To have multiple choices on li items in the ul
+You must use array and forEach.
+Application Below
+*/
+/*
+const fruits = ["Orange", "Guova", "Apple", "Banana", "Avacado"];
+const ul = document.querySelector("ul");
+fruits.forEach((fruit) => {
+    const li = document.createElement("li");
+    li.textContent = fruit;
+    ul.appendChild(li);
+})
+*/
+/*
+remove()
+its remove all element from the body
+*/
+/*   Please, revisit this.
+const body = document.querySelector("body");
+const p = document.querySelector("p");
+
+body.remove();
+
+//removeChild() - remove element from another element
+
+body.removeChild(p);
+*/
+
+/*
+EventListener
+
+There are so many EventListener
+1. click,	- Fires when an element is clicked
+2. dblclick	- Fires when an element is double-clicked
+3. mousedow - Fires when mouse button is pressed down
+4. mouseup - Fires when mouse button is released
+5. mousemove - Fires when mouse moves over an element
+6. mouseover - Fires when mouse enters an element
+7. mouseout	- Fires when mouse leaves an element
+8. mouseenter - Fires when mouse enters an element
+(doesn't bubble)
+9. mouseleave - Fires when mouse leaves an element
+(doesn't bubble)
+10. contextmenu	- Fires when right-click happens
+11. keydown	- Fires when a key is pressed down
+12. keyup - Fires when a key is released
+13. keypress - Fires when a key that produces a
+character is pressed (deprecated)
+*/
+// click eventlistener
+/*
+const button = document.querySelector("button");
+button.addEventListener("click", () => {
+    console.log("This is click function");
+})
+*/
+
+// dblclick eventlistener
+/*
+const buttonbtn = document.querySelector("button");
+buttonbtn.addEventListener("dblclick", () => {
+    console.log("I am Double Click Function");
+})
+*/
+
+//mousedom eventlistener
+/*
+const btn = document.querySelector("button");
+btn.addEventListener("mousedom", () => {
+    console.log("mousedom function here");
+})
+*/
+
+
+/*
+// Class Work
+const button = document.querySelector("button");
+button.addEventListener("mousedown", () => {
+    console.log("i am mousedown");
+});
+*/
+
+/*
+json - javascript object notation, this is a format
+in which information or data is saved on our database
+*/
+
+// Object
+/*
+person = {
+    name: "john",
+    age: 23,
+}
+*/
+
+/*
+Converting to Json
+JSON.stringnify -
+to convert from object to json format for we to save
+on our database or localstorage
+*/
+
+/*
+person = {
+    name: "john",
+    age: 23,
+}
+
+const string = JSON.stringify(person);
+console.log(string);
+*/
+
+/*
+JSON.parse() - convert from json to object
+JSON.parse();
+*/
+
+/*
+Storage
+LocalStorage -
+is a brower storage system thats saves data
+permanently in the user's browser.
+
+localStorage.setItem(key, value)-
+to save to in the localstorage
+
+setItem(key , value) -- save the data on the
+localstorage, key and value
+*/
+/*
+person = {
+    name: "john",
+    age: 23,
+    gender: "male",
+}
+const convertT0Json = JSON.stringify(person); // conv to Json
+localStorage.setItem("info", convertT0Json); // save to locaStorage
+
+// getItem (key) -- retrieving from storage(LocalStorage)
+const get = localStorage.getItem("user");
+console.log(get);
+const convertToObject = JSON.parse(get); //Conv to object
+console.log(convertToObject);
+
+// removeItem(key) - remove from
+localStorage.removeItem("user"); // is individual
+localStorage.clear(); // all
+*/
+
+/*
+sessionStorage - stores item temporarly,
+when close the browers everything goes off
+*/
+/*
+students = {
+    email: "student@gmail.com",
+    matNo: "U20556680",
+    phoneNumber: 9012345678,
+    isStudent: true
+}
+//setItem(key, value) - save to session storage
+const convertToJson = JSON.stringify(students);
+const savedSS = sessionStorage.setItem("user", convertToJson);
+console.log(savedSS);
+
+//getItem(key) - get item from session storage
+const getSS = sessionStorage.getItem("user");
+const converToObject = sessionStorage.getItem(getSS);
+console.log(converToObject);
+
+// removeItem(key)
+sessionStorage.removeItem("user");
+//Clear
+//sessionStorage.clear()
 */

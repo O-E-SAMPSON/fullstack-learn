@@ -1,0 +1,50 @@
+.container {
+    padding-top: 140px;
+    padding-left: 170px;
+}
+
+.container-text {
+    display: flex;
+}
+
+.txt1 {
+    padding-left: 110px;
+    color: rgb(113, 160, 247);
+    font-size: 12px;
+}
+
+.txt2 {
+    padding-left: 150px;
+    font-size: 12px;
+}
+
+.contain {
+    background-color: red;
+    width: 550px;
+    height: 150px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.bginfor {
+    /* margin-top: 260px; */
+    margin-left: 130px;
+    padding: 5px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 6px;
+}
+
+span {
+    color: aqua;
+}
+
+button {
+    margin-top: 20px;
+    border: 2px white solid;
+    background-color: red;
+
+}
